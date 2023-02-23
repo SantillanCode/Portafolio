@@ -1,0 +1,292 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #FEFEFE;
+}
+
+/* navegation section */
+
+header {
+    background-color: gainsboro;
+    padding: 20px 0;
+    width: 100vw;
+}
+
+.container {
+    
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 40px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 2px solid #FEFEFE;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+/* Main section*/
+
+.banner {
+    width: 100%;
+}
+
+.main {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 880px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 2em;
+    clear: left;
+}
+
+.utensils {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.main p {
+    margin: 0 0 2em;
+    text-align: justify;
+}
+
+.main strong {
+    font-weight: bold;
+}
+
+.main em {
+    font-style: italic;
+}
+
+.map {
+    padding: 3em 0;
+    background: linear-gradient(#FFFFFF, #888888)
+}
+
+.map p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.map-container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.differentials {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.container-differentials {
+    width: 640px;
+    margin: 50px auto;
+}
+
+.item-differentials{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 2.5;    
+}
+
+.items::before{
+    content: "★";
+}
+
+.imagedifferentials {
+    width: 300px;
+    height: 250px;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 10px #000000;
+}
+
+.imagedifferentials:hover {
+    opacity: 0.3;
+}
+
+/* Footer section */
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px 0;   
+    width: 100vw; 
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Products section*/
+
+.products {
+    width: 100vw;
+    margin: 100px auto;
+    padding: 50px 0 50px 50px;
+
+}
+
+.products li {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    vertical-align: top;
+    margin: 10px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border:  2px solid #000000;
+    border-radius: 10px;
+}
+
+.products li:hover {
+    border-color: #C78C19;
+}
+
+.products li:active {
+    border-color: #088C19;
+}
+
+.products h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.products li:hover h2 {
+    font-size: 33px;
+}
+
+.products-description{
+    font-size: 18px;
+}
+
+.products-price {
+    font: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contact section */
+
+form {
+    margin: 40px 50px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.send {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.send:hover {
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+@media screen and (max-width: 480px) {
+   
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container, .main, .map-container, .container-differentials{
+        width: auto;
+        ;
+    }
+
+    .item-differentials, .imagedifferentials {
+        width: 100%;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 130px;
+        margin: 60px 0;
+    }
+     
+    .main {
+        width: 300px;
+    }
+}

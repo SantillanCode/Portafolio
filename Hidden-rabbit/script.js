@@ -1,0 +1,1 @@
+alert("Da click en los conejos antes de que se escondan para ganar")
